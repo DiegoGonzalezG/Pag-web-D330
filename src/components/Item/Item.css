@@ -1,0 +1,24 @@
+/* Clase para ajustar el tamaño de las imágenes */
+.product-image {
+    width: 150px;        /* Ajusta el ancho (más pequeño) */
+    height: 150px;       /* Ajusta la altura (más pequeña) */
+    object-fit: cover;   /* Asegura que la imagen se ajuste sin deformarse */
+    object-position: center; /* Centra la imagen */
+    border: 2px solid #808080; /* Borde gris de 2px */
+    border-radius: 8px;  /* Opcional: redondea las esquinas del borde */
+}
+
+/* Media queries para hacer la imagen más grande en pantallas más grandes */
+@media (min-width: 768px) {
+    .product-image {
+        width: 200px;    /* Ajusta el ancho a 200px para pantallas más grandes */
+        height: 200px;   /* Ajusta la altura a 200px para pantallas más grandes */
+    }
+}
+
+@media (min-width: 1200px) {
+    .product-image {
+        width: 250px;    /* Ajusta el ancho a 250px para pantallas más grandes */
+        height: 250px;   /* Ajusta la altura a 250px para pantallas más grandes */
+    }
+}
